@@ -14,7 +14,6 @@ module FormsLab
 
     # post methods always return data back to the server from the user
     post '/pirates' do
-      binding.pry
       @pirate = Pirate.new(params[:pirate])
 
       params[:pirate][:ships].each do |details|
