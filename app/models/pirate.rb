@@ -8,6 +8,7 @@ class Pirate
     @height = params[:height]
     @weight = params[:weight]
     @@all << self
+    binding.pry
   end
 
   def self.all
